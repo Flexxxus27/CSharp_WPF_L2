@@ -1,0 +1,58 @@
+﻿<Window x:Class="CSharp_WPF_L2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharp_WPF_L2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="570" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.50*"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+            <Run Foreground="#FFCC0D0D">Регистрация</Run>
+            <Run>сотрудников</Run>
+            <LineBreak/>
+            <Run>компании</Run>
+        </TextBlock>
+        <StackPanel Grid.Row="1" Grid.RowSpan="2">
+            <TextBlock>Отзыв на техподдержку</TextBlock>
+        <ListBox>
+                <ListBoxItem>
+                    <TextBlock>
+                        <Run>Демин Виктор Васильевич</Run>
+                        <LineBreak/>
+                        <Run>Смог дозвонится!</Run>
+                    </TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>
+        <Run>Павлов Анатолий Кринделёв</Run>
+        <LineBreak/>
+        <Run>Не смог получить услугу(</Run>
+                    </TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>
+        <Run>Самарин Евгений Владимирович</Run>
+        <LineBreak/>
+        <Run>Увидел новые возможности</Run>
+                    </TextBlock>
+                </ListBoxItem>
+            
+            </ListBox>
+    </StackPanel>
+        
+    </Grid>
+</Window>
